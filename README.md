@@ -5,6 +5,21 @@ Por agora são apenas exemplos que se encontram na pasta do projeto.
 
   
 
+### Status
+
+Atualmente o postback possui alguns status para o acompanhamento do pedido no geral, são guiados pelo tipo de produto(físico ou digital).
+
+| status | Nome | Descrição |
+| --- | --- | --- |
+| waiting\_payment | Reservado - Aguardando Pagamento | O pedido foi reservado e está aguardando pagamento. |
+| paid | Pago | Já está pago e em breve entrará em separação(caso físico) |
+| separation | Em separação | Pedido está sendo separado para ser coletado |
+| collected\_order | Pedido Coletado | Pedido coletado e poderá ser rastreado dependendo do vendedor |
+| shipping | Em Transporte | Pedido está em transporte |
+| shipped | Entregue | Pedido foi entregue com sucesso |
+| cancelled | Cancelado | O pedido foi cancelado por algum motivo como pagamento recusado |
+| lost\_cart | Carrinho Perdido | Carrinho abandonado | Cliente abandonou o carrinho. Baseado na média de tempo de checkout, é enviado em 7 minutos. |
+
   
 
 ### Fluxos de Atividade
