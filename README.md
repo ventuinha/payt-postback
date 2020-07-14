@@ -18,7 +18,7 @@ Atualmente o postback possui alguns status para o acompanhamento do pedido no ge
 | shipping | Em Transporte | Pedido está em transporte |
 | shipped | Entregue | Pedido foi entregue com sucesso |
 | cancelled | Cancelado | O pedido foi cancelado por algum motivo como pagamento recusado |
-| lost\_cart | Carrinho Perdido | Carrinho abandonado | Cliente abandonou o carrinho. Baseado na média de tempo de checkout, é enviado em 7 minutos. |
+| lost\_cart | Carrinho Perdido \| Carrinho abandonado | Cliente abandonou o carrinho. Baseado na média de tempo de checkout, é enviado em 7 minutos. |
 
   
 
