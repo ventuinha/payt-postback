@@ -150,12 +150,13 @@ Exemplo
 ## Link Object
 | Campo             | Tipo                                                                                     | Descrição                                                                                                   |
 |-------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| title             | string                                                                                   | Nome do Checkout/Upsell                                                                                     |
+| title             | string                                                                                   | Nome do Checkout/Upsell  |
 | url               | string URL                                                                               | Url do Checkout/Upsell. Em caso de carrinho abandonado, a url conterá o _cart_id_ para recuperação          |
 | admin_url         | string URL                                                                               | Presente em caso de Carrinho Abandonado. Url para visualização do carrinho dentro da plataforma             |
 | available_coupons | [Array de Coupon Object](#coupon-object)                                                 | Presente em caso de Carrinho Abandonado. Lista de cupons que podem ser utilizados para recuperação da venda |
 | sources           | Object(possíveis keys: src, utm_source, utm_medium, utm_content, utm_campaign, utm_term) | key->value de GET params relacionados ao utm quando o checkout estava aberto                                |
 | query_params      | Object                                                                                   | Outros GET params que estavam presentes na url do checkout                                                  |
+| seller_email      | string                                                                                   | Email do vendendor/usuário em casos de venda manual ou upsell manual
 
 ### Coupon Object
 | Campo      | Tipo                     | Descrição                                          |
