@@ -100,6 +100,8 @@ físico ou digital).
 | phone           | string                                 | Número de Telefone, **apenas números**                                       |
 | billing_address | [JSON Address Object](#address-object) | Endereço de Cobrança, ausente em caso do checkout digital                    |
 | origin          | [JSON Origin Object](#origin-object)   | Presente caso este comprador tenha sido originado de alguma campanha do PayT |
+| code            | string                                 | Código do comprador dentro do APP.PAYT                                       |
+| url             | string                                 | URL de edição/ações no cadastro do comprador                                 |
 
 ### Origin Object
 
