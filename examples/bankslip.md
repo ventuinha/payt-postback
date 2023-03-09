@@ -40,8 +40,8 @@
             "city": "Taboão da Serra",
             "estate": "SP",
             "country": "BR"
-        }
-        "code":"BLJORW" 
+        },
+        "code":"BLJORW", 
         "url":"http://app.payt.com.br/admin/clientes/BLJORW/edit"
     },
     "product": {
@@ -85,7 +85,7 @@
     "link": {
         "title": "Shadowrun para iniciantes com dinheiro",
         "url": "https://checkout.payt.com.br/a684eceee76fc522773286a895bc8436",
-        "sources": []
+        "sources": [],
         "seller_email":"admin@email.com"  //campo só enviado em caso de vendas manuais
     },
     "transaction": {
