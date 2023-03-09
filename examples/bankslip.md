@@ -85,8 +85,7 @@
     "link": {
         "title": "Shadowrun para iniciantes com dinheiro",
         "url": "https://checkout.payt.com.br/a684eceee76fc522773286a895bc8436",
-        "sources": [],
-        "seller_email":"admin@email.com"  //campo só enviado em caso de vendas manuais
+        "sources": []
     },
     "transaction": {
         "created_at": "2020-07-10 13:48:59",
