@@ -44,7 +44,9 @@ Só troca de `upsell` para `manual_upsell` no campo type
             "city": "Taboão da Serra",
             "estate": "SP",
             "country": "BR"
-        }
+        }, 
+        "code":"BLJORW", 
+        "url":"http://app.payt.com.br/admin/clientes/BLJORW/edit"
     },
     "product": {
         "code": "BLJOOR",
@@ -57,7 +59,8 @@ Só troca de `upsell` para `manual_upsell` no campo type
     "link": {
         "title": "Aproveite Também - Never Deal With a Dragon: Secrets of Power",
         "url": "https://checkout.payt.com.br/d82c8d1619ad8176d665453cfb2e55f0",
-        "sources": []
+        "sources": [], 
+        "seller_email":"admin@email.com"
     },
     "transaction": {
         "created_at": "2020-07-10 13:45:24",
