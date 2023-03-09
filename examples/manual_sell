@@ -1,8 +1,3 @@
-Um Upsell Manual se trata de um caso onde o administrador após contatar o comprador e ter sua autorização, faz a compra utilizando a sessão ainda ativa do cartão.
-
-Só troca de `upsell` para `manual_upsell` no campo type
-
-```json
 {
     "integration_key": "a74cf3440b21998dc78c8f35c72f124e",
     "cart_id": "R6VZW4",
@@ -76,4 +71,3 @@ Só troca de `upsell` para `manual_upsell` no campo type
         "paid_at": "2020-07-10 13:45:24"
     }
 }
-```

@@ -43,7 +43,9 @@ O especial aqui é só o `cart_recovered`
             "city": "Taboão da Serra",
             "estate": "SP",
             "country": "BR"
-        }
+        }, 
+        "code":"BLJORW", 
+        "url":"http://app.payt.com.br/admin/clientes/BLJORW/edit"
     },
     "product": {
         "code": "2RVDER",
@@ -86,7 +88,8 @@ O especial aqui é só o `cart_recovered`
     "link": {
         "title": "Shadowrun para iniciantes com dinheiro",
         "url": "https://checkout.payt.com.br/a684eceee76fc522773286a895bc8436",
-        "sources": []
+        "sources": [], 
+        "seller_email":"admin@email.com"  //campo só enviado em caso de vendas manuais
     },
     "transaction": {
         "created_at": "2020-07-10 13:43:25",

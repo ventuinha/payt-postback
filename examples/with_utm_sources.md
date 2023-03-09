@@ -44,7 +44,9 @@ ele também aceita o parametro `src`
             "city": "Taboão da Serra",
             "estate": "SP",
             "country": "BR"
-        }
+        }, 
+        "code":"BLJORW", 
+        "url":"http://app.payt.com.br/admin/clientes/BLJORW/edit"
     },
     "product": {
         "code": "9RKD4M",

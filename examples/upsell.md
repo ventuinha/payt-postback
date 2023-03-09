@@ -40,7 +40,9 @@
             "city": "Taboão da Serra",
             "estate": "SP",
             "country": "BR"
-        }
+        }, 
+        "code":"BLJORW", 
+        "url":"http://app.payt.com.br/admin/clientes/BLJORW/edit"
     },
     "product": {
         "code": "BLJOOR",
