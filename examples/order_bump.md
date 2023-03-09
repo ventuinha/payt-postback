@@ -41,7 +41,9 @@ A estrutura dentro de `order_bumps.product` segue igual à `product`
       "city": "Taboão da Serra",
       "estate": "SP",
       "country": "BR"
-    }
+    }, 
+    "code":"BLJORW", 
+    "url":"http://app.payt.com.br/admin/clientes/BLJORW/edit"
   },
   "product": {
     "code": "JLY9B4",
