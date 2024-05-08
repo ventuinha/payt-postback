@@ -38,7 +38,7 @@ físico ou digital) e também assinatura.
 | collected                | Pedido Coletado                  | Pedido coletado e poderá ser rastreado dependendo do Tenant                                  |
 | shipping                 | Em Transporte                    | Pedido está em transporte                                                                    |
 | shipped                  | Entregue                         | Pedido foi entregue com sucesso                                                              |
-| cancelled                | Cancelado                        | O pedido foi cancelado por algum motivo como pagamento recusado                              |
+| canceled                 | Cancelado                        | O pedido foi cancelado por algum motivo como pagamento recusado                              |
 | lost_cart                | Carrinho Perdido                 | Cliente abandonou o carrinho. Baseado na média de tempo de checkout, é enviado em 7 minutos. |
 | subscription_canceled    | Assinatura Cancelada             | Assinatura foi cancelada, verifique o `subscription.status` para informação mais detalhada.  |
 | subscription_activated   | Assinatura Ativada               | Assinatura foi ativada.                                                                      |
