@@ -64,6 +64,7 @@ físico ou digital) e também assinatura.
 | Status              | Nome                                  |
 |---------------------|---------------------------------------|
 | waiting             | Aguardando postagem                   |
+| tracking_received   | Rastreio Recebido                     |
 | invalid_code        | Código de Rastreio Inválido           |
 | delivery_problem    | Problema na Entrega                   |
 | overdue             | Em Atraso                             |
