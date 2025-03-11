@@ -2,27 +2,27 @@
 
 Atualmente o PayT V1 possui os seguintes campos
 
-| Campo           | Tipo                                               | Descrição                                                                                                                      |
-|-----------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| integration_key | string                                             | Sua chave de integração, serve para você poder validar se realmente o postback se origina do PayT                              |
-| transaction_id  | string                                             | ID da Compra                                                                                                                   |
-| seller_id       | string                                             | Código do Tenant                                                                                                               |
-| test            | bool                                               | Se o Tenant está em modo de homologação ou não. Caso True, a compra não é real.                                                |
-| type            | Enum(order, upsell, manual_upsell, abandoned-cart) | Se é um Order, Upsell ou Carrinho abandonado                                                                                   |
-| status          | [Postback Status](#postback-status)                | Status do Order, também indica a razão do Postback                                                                             |
-| tangible        | bool                                               | Se o produto é físico ou não                                                                                                   |
-| was_lost        | bool                                               | Aparece quando o carrinho já passou pelo evento de carrinho abandonado. Pode ser usado para verificar se é uma recuperação     |
-| cart_id         | string                                             | ID do Carrinho                                                                                                                 |
-| shipping        | [Shipping](#shipping-object)                       | Informações sobre a entrega. Existe apenas quando o tangible é True.                                                           |
-| customer        | [Customer](#customer-object)                       | Informações do comprador                                                                                                       |
-| product         | [Product](#product-object)                         | Informações do Produto vendido                                                                                                 |
-| order_bumps     | [Array de OrderBumps](#orderbump-object)           | Informações dos Produtos que entraram como OrderBump da Venda. **Presente apenas o comprador optou por um OrderBump na venda** |
-| link            | [Link](#link-object)                               | Informações do Checkout/Upsell que originou a compra                                                                           |
-| transaction     | [Transaction](#transaction-object)                 | Informações da Transação                                                                                                       |
-| subscription    | [Subscription](#subscription-object)               | Informações da Assinatura **Presente apenas quando a venda é de uma assinatura**                                               |
-| commission      | [Array de Commissions](#commission-object)         | Informações sobre a comissão                                                                                                   |
-| started_at      | Date (Y-m-d H:i:s)                                 | Quando o carrinho foi criado                                                                                                   |
-| updated_at      | Date (Y-m-d H:i:s)                                 | Última atualização do Order                                                                                                    |
+| Campo           | Tipo                                                                 | Descrição                                                                                                                      |
+|-----------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| integration_key | string                                                               | Sua chave de integração, serve para você poder validar se realmente o postback se origina do PayT                              |
+| transaction_id  | string                                                               | ID da Compra                                                                                                                   |
+| seller_id       | string                                                               | Código do Tenant                                                                                                               |
+| test            | bool                                                                 | Se o Tenant está em modo de homologação ou não. Caso True, a compra não é real.                                                |
+| type            | Enum(order, upsell, manual_upsell, abandoned-cart, cash_on_delivery) | Se é um Order, Upsell, Carrinho abandonado ou Pague após receber                                                               |
+| status          | [Postback Status](#postback-status)                                  | Status do Order, também indica a razão do Postback                                                                             |
+| tangible        | bool                                                                 | Se o produto é físico ou não                                                                                                   |
+| was_lost        | bool                                                                 | Aparece quando o carrinho já passou pelo evento de carrinho abandonado. Pode ser usado para verificar se é uma recuperação     |
+| cart_id         | string                                                               | ID do Carrinho                                                                                                                 |
+| shipping        | [Shipping](#shipping-object)                                         | Informações sobre a entrega. Existe apenas quando o tangible é True.                                                           |
+| customer        | [Customer](#customer-object)                                         | Informações do comprador                                                                                                       |
+| product         | [Product](#product-object)                                           | Informações do Produto vendido                                                                                                 |
+| order_bumps     | [Array de OrderBumps](#orderbump-object)                             | Informações dos Produtos que entraram como OrderBump da Venda. **Presente apenas o comprador optou por um OrderBump na venda** |
+| link            | [Link](#link-object)                                                 | Informações do Checkout/Upsell que originou a compra                                                                           |
+| transaction     | [Transaction](#transaction-object)                                   | Informações da Transação                                                                                                       |
+| subscription    | [Subscription](#subscription-object)                                 | Informações da Assinatura **Presente apenas quando a venda é de uma assinatura**                                               |
+| commission      | [Array de Commissions](#commission-object)                           | Informações sobre a comissão                                                                                                   |
+| started_at      | Date (Y-m-d H:i:s)                                                   | Quando o carrinho foi criado                                                                                                   |
+| updated_at      | Date (Y-m-d H:i:s)                                                   | Última atualização do Order                                                                                                    |
 
 ## Postback Status
 
@@ -192,6 +192,7 @@ Exemplo
 | total_price    | integer                                                 | Valor total da transação **em centavos**                                                    |
 | quantity       | integer                                                 | Quantidade                                                                                  |
 | upsell_from    | string                                                  | Presente apenas em upsell/upsell_manual, se refere ao Order que originou o upsell           |
+| payment_url    | string                                                  | Presente apenas em pague após receber, se refere ao Link de pagamento da venda              |
 | modifiers      | [Array de Payment Modifiers](#payment-modifiers-object) | Modificadores do valor da transação, atualmente apenas cupons utilizados serão listados ali |
 | paid_at        | Date (Y-m-d H:i:s)                                      | Data de quando o Pagamento foi efetuado. Presente apenas quando pago                        |
 | created_at     | Date (Y-m-d H:i:s)                                      | Data de criação da Transação                                                                |
