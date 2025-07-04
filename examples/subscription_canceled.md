@@ -1,11 +1,11 @@
 ```json
 {
-  "integration_key": "468xxxe898526xxxe2e2d9ecd1a39xxx",
-  "started_at": "2025-07-04 11:21:11",
-  "updated_at": "2025-07-04 11:21:46",
+  "integration_key": "4xxcc7xxx8526exx2exxxxcd1a3xxxx",
+  "started_at": "2025-07-04 11:37:59",
+  "updated_at": "2025-07-04 11:39:55",
   "seller_id": "XXXXXX",
   "test": true,
-  "status": "subscription_activated",
+  "status": "subscription_canceled",
   "type": "order",
   "tangible": false,
   "transaction_id": "XXXXXX",
@@ -22,11 +22,11 @@
       "last_query_params": []
     },
     "url": "https://app.payt.com.br/admin/clientes/XXXXXX/edit",
-    "code": "AR2VRQ"
+    "code": "XXXXXX"
   },
   "product": {
     "code": "XXXXXX",
-    "sku": "xx1xxx03d3xxx",
+    "sku": "xx16xx03d3xxx",
     "type": "digital",
     "name": "Produto Digital 01",
     "quantity": 1,
@@ -35,21 +35,21 @@
   "link": {
     "title": "Assinatura",
     "sources": [],
-    "url": "https://app.payt.com.br/XXXwCgY",
+    "url": "https://app.payt.com.br/XXxxXxX",
     "query_params": []
   },
   "transaction": {
-    "created_at": "2025-07-04 11:21:17",
-    "updated_at": "2025-07-04 11:21:46",
-    "payment_method": "pix",
+    "created_at": "2025-07-04 11:38:04",
+    "updated_at": "2025-07-04 11:39:55",
+    "payment_method": "boleto",
     "payment_status": "paid",
     "total_price": 10000,
     "quantity": 1,
     "modifiers": [],
-    "pix_url": "https://app.payt.com.br/obrigado/XXXXXX",
-    "pix_code": "00020126580014br.gov.bcb.pix0136b76aaXXX-2ec4-4110-XXXX-ebfe34f05b615204000053039865406100.005802BR5911TETE86020216009Sao Paulo62250521mpqrinter1168609883196304D51F",
-    "expires_at": "2025-07-04 12:21:15",
-    "paid_at": "2025-07-04 11:21:46"
+    "bankslip_url": "https://www.mercadopago.com.br/staging/payments/116861327839/ticket?caller_id=15XX345XXX&payment_method_id=bolbradesco&payment_id=XX68XXX27XXX&payment_method_reference_id=600XXXX5XX&hash=b790f733-XXXX-4dc4-XXXX-33c99XXX81ec",
+    "bankslip_code": "2XXX338029XXX0041225231XXX3333016113500000XXX00",
+    "expires_at": "2025-07-07 23:59:59",
+    "paid_at": "2025-07-04 11:39:55"
   },
   "commission": [
     {
@@ -71,8 +71,8 @@
     "charges": 1,
     "periodicity": "1 year",
     "next_charge_at": "2026-06-29",
-    "status": "active",
-    "started_at": "2025-07-04 11:21:46"
+    "status": "canceled_by_admin",
+    "started_at": "2025-07-04 11:39:55"
   }
 }
 ```

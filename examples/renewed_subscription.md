@@ -1,15 +1,14 @@
 ```json
 {
-  "integration_key": "468xxxe898526xxxe2e2d9ecd1a39xxx",
-  "started_at": "2025-07-04 11:21:11",
-  "updated_at": "2025-07-04 11:21:46",
-  "seller_id": "XXXXXX",
+  "integration_key": "x68ccxxxx8526edbxxx2d9ecd1a39xxx",
+  "started_at": "2025-07-11 01:00:00",
+  "updated_at": "2025-07-11 01:00:00",
+  "seller_id": "XXXXXXX",
   "test": true,
-  "status": "subscription_activated",
+  "status": "subscription_renewed",
   "type": "order",
   "tangible": false,
   "transaction_id": "XXXXXX",
-  "cart_id": "XXXXXX",
   "customer": {
     "name": "Solaire of Astora M Walter White",
     "fake_email": false,
@@ -22,11 +21,11 @@
       "last_query_params": []
     },
     "url": "https://app.payt.com.br/admin/clientes/XXXXXX/edit",
-    "code": "AR2VRQ"
+    "code": "XXXXXX"
   },
   "product": {
     "code": "XXXXXX",
-    "sku": "xx1xxx03d3xxx",
+    "sku": "6xxx9003dxxxx",
     "type": "digital",
     "name": "Produto Digital 01",
     "quantity": 1,
@@ -34,45 +33,55 @@
   },
   "link": {
     "title": "Assinatura",
-    "sources": [],
-    "url": "https://app.payt.com.br/XXXwCgY",
-    "query_params": []
+    "sources": []
   },
   "transaction": {
-    "created_at": "2025-07-04 11:21:17",
-    "updated_at": "2025-07-04 11:21:46",
-    "payment_method": "pix",
+    "created_at": "2025-07-11 01:00:00",
+    "updated_at": "2025-07-11 01:00:00",
+    "payment_method": "credit_card",
     "payment_status": "paid",
     "total_price": 10000,
     "quantity": 1,
     "modifiers": [],
-    "pix_url": "https://app.payt.com.br/obrigado/XXXXXX",
-    "pix_code": "00020126580014br.gov.bcb.pix0136b76aaXXX-2ec4-4110-XXXX-ebfe34f05b615204000053039865406100.005802BR5911TETE86020216009Sao Paulo62250521mpqrinter1168609883196304D51F",
-    "expires_at": "2025-07-04 12:21:15",
-    "paid_at": "2025-07-04 11:21:46"
+    "installments": 1,
+    "installment_price": 10000,
+    "price_without_installments": 10000,
+    "paid_at": "2025-07-11 01:00:00"
   },
   "commission": [
     {
       "name": "PAYT TECNOLOGIA E EDUCACAO DIGITAL LTDA",
       "email": "email@payt.com.br",
       "type": "platform",
-      "amount": 2050
+      "amount": 2250
     },
     {
       "name": "QA Teste LTDA",
       "email": "qateste@email.com",
       "type": "producer",
-      "amount": 7950
+      "amount": 6200
+    },
+    {
+      "name": "Afiliado Um",
+      "email": "afiliado001@email.com",
+      "type": "affiliation",
+      "amount": 775
+    },
+    {
+      "name": "Afiliado Tres",
+      "email": "afiliado003@email.com",
+      "type": "affiliation_manager",
+      "amount": 775
     }
   ],
   "subscription": {
     "code": "XXXXXX",
-    "plan_name": "Semanal",
-    "charges": 1,
-    "periodicity": "1 year",
-    "next_charge_at": "2026-06-29",
+    "plan_name": "Primeira diferente 5.3.0",
+    "charges": 10,
+    "periodicity": "7 day",
+    "next_charge_at": "2025-07-18",
     "status": "active",
-    "started_at": "2025-07-04 11:21:46"
+    "started_at": "2025-05-09 10:27:55"
   }
 }
 ```
