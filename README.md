@@ -91,6 +91,7 @@ físico ou digital) e também assinatura.
   "complement": "Complemento",
   "district": "Bairro",
   "city": "Cidade",
+  "state": "XX",
   "estate": "XX",
   "country": "BR"
 }
