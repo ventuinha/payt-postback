@@ -92,7 +92,6 @@ físico ou digital) e também assinatura.
   "district": "Bairro",
   "city": "Cidade",
   "state": "XX",
-  "estate": "XX",
   "country": "BR"
 }
 ```
